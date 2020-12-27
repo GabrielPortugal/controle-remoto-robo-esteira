@@ -4,6 +4,8 @@ import { useNavigation } from '@react-navigation/native'
 
 import Controle from '../Controle/Controle'
 
+import { WebView } from 'react-native-webview';
+
 import estilo from './estilo'
 import act from './actions'
 
@@ -14,6 +16,9 @@ const Home = () => {
     <View style={estilo.container}>
 
       <View style={estilo.containerVideo}>
+        <WebView
+          source={{ uri: 'https://infinite.red' }}
+        />
       </View>
 
       <View style={estilo.containerTexto}>
