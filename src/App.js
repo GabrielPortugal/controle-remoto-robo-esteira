@@ -20,7 +20,7 @@ const App = () => {
 			<StatusBar backgroundColor="#CC7D00" />
 			<NavigationContainer>
 				<SafeAreaView style={styles.container}>
-					<Stack.Navigator initialRouteName='Home'>
+					<Stack.Navigator initialRouteName='Inicial'>
 						<Stack.Screen
 							name='Inicial'
 							component={Inicial}

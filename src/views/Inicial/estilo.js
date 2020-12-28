@@ -1,18 +1,7 @@
 import { StyleSheet, Dimensions } from "react-native"
 import {
-  AZUL,
-  CINZA_CLARO,
-  CINZA,
-  CINZA_MENOS_ESCURO,
-  CINZA_ESCURO,
   AMARELO,
-  AMARELO_ESCURO,
-  ROXO,
-  VERMELHO,
-  VERDE,
-  FUNDO,
-  BRANCO,
-  PRETO
+  BRANCO
 } from '../../styles/styles'
 
 const largura = Dimensions.get("screen").width

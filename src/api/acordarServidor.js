@@ -3,10 +3,6 @@ const url = 'https://d6-robo.herokuapp.com'
 const acordarServidor = async () => {
   const cabecalhoHTTP = {
     method: 'POST',
-    // body: JSON.stringify({
-    //     userName: usuario,
-    //     password: senha
-    // }),
     headers: {
       'Content-type': 'application/json'
     }
