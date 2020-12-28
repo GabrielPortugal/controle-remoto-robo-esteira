@@ -36,8 +36,23 @@ const Controle = () => {
   }
 
   const pressBtn = async (index) => {
-    let msg = await act.sendComando({ comando: index }, index)
-    toastExibir(msg)
+    /*
+      o código abaixo envia o comando para o servidor
+    */
+    // let msg = await act.sendComando({ comando: index }, index)
+    // toastExibir(msg)
+    /*
+      o código abaixo simula a resposta do servidor
+      caso coloque a comunicação pelo servidor, remover o código abaixo
+    */
+    switch (index) {
+      case 1: toastExibir('Para cima'); return
+      case 2: toastExibir('Para esquerda'); return
+      case 3: toastExibir('Mover cabeça'); return
+      case 4: toastExibir('Para direita'); return
+      case 5: toastExibir('Para trás'); return
+      case 6: toastExibir('Parar tudo'); return
+    }
   }
 
   return (

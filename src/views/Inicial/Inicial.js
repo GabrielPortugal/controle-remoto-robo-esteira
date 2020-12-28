@@ -23,7 +23,7 @@ const Inicial = () => {
             <Image source={robo} style={estilo.imagem}></Image>
           </View>
           <View style={estilo.containerTextoInfo}>
-            <Text style={estilo.textoInfo}>Antes de ligar o D6</Text>
+            <Text style={estilo.textoInfo}>Antes de ligar o Robô</Text>
             <Text style={estilo.textoInfo}>ACORDE O SERVIDOR</Text>
           </View>
           <View>

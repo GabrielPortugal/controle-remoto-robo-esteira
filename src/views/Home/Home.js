@@ -13,7 +13,7 @@ const Home = () => {
 
   const htmlVideo = `<div style="background-color: #333;display: flex;
   justify-content: center;align-content: center;">
-  <img src="http://10.0.0.140:8080/?action=stream" style="transform: rotate(180deg);"/>
+  <img src="LINK_VIDEO" style="transform: rotate(180deg);"/>
   </div>`
 
   return (
@@ -24,7 +24,7 @@ const Home = () => {
 
       <View style={estilo.containerTexto}>
         <View style={estilo.estiloTexto}>
-          <Text style={estilo.textoBranco}>D-6</Text>
+          <Text style={estilo.textoBranco}>Robô Esteira</Text>
         </View>
       </View>
 
