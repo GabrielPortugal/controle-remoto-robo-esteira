@@ -1,21 +1,22 @@
-import { acordarServidor } from '../../api/acordarServidor'
+import { enviarComando } from '../../api/enviarComando'
 
-const onPressInversoAcordar = (estIsInicial, setIsInicial) => {
-  setIsInicial(!estIsInicial)
-}
-
-const acordar = async (setIsInicial, navigation) => {
-    const resp = await acordarServidor()
-    if(resp) {
-      setIsInicial(true)
-      return true
+const sendComando = async (payload, index) => {
+  const resp = await enviarComando(payload)
+  if (resp) {
+    switch (index) {
+      case 1: return 'Para cima'
+      case 2: return 'Para esquerda'
+      case 3: return 'Mover cabeça'
+      case 4: return 'Para direita'
+      case 5: return 'Para trás'
+      case 6: return 'Parar tudo'
     }
-    else {
-      return false
-    }
+  }
+  else {
+    return 'Erro!'
+  }
 }
 
 export default {
-  onPressInversoAcordar,
-  acordar
+  sendComando
 }

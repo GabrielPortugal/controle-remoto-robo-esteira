@@ -35,9 +35,9 @@ const Controle = () => {
     setMsgToast(msg)
   }
 
-  const pressBtn = (index, msg) => {
+  const pressBtn = async (index) => {
+    let msg = await act.sendComando({ comando: index }, index)
     toastExibir(msg)
-    console.warn('index:', index)
   }
 
   return (
@@ -45,28 +45,28 @@ const Controle = () => {
       <Toast visible={estExibirToast} message={estMsgToast} />
 
       <View style={estilo.linha}>
-        <Botao onPress={() => pressBtn(3,'3')}>
+        <Botao onPress={() => pressBtn(3)}>
           <Image source={cabeca} style={estilo.imagemSeta}></Image>
         </Botao>
-        <Botao onPress={() => pressBtn(1,'1')}>
+        <Botao onPress={() => pressBtn(1)}>
           <Image source={cima} style={estilo.imagemSeta}></Image>
         </Botao>
         <Botao></Botao>
       </View>
       <View style={estilo.linha}>
-        <Botao onPress={() => pressBtn(2,'2')}>
+        <Botao onPress={() => pressBtn(2)}>
           <Image source={esquerda} style={estilo.imagemSeta}></Image>
         </Botao>
-        <Botao onPress={() => pressBtn(6,'6')}>
+        <Botao onPress={() => pressBtn(6)}>
           <Image source={parar} style={estilo.imagemSeta}></Image>
         </Botao>
-        <Botao onPress={() => pressBtn(4,'4')}>
+        <Botao onPress={() => pressBtn(4)}>
           <Image source={direita} style={estilo.imagemSeta}></Image>
         </Botao>
       </View>
       <View style={estilo.linha}>
         <Botao></Botao>
-        <Botao onPress={() => pressBtn(5,'5')}>
+        <Botao onPress={() => pressBtn(5)}>
           <Image source={baixo} style={estilo.imagemSeta}></Image>
         </Botao>
         <Botao></Botao>
