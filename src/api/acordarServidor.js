@@ -1,4 +1,4 @@
-const url = 'https://d6-robo.herokuapp.com'
+import { URL_SERVIDOR } from '@env';
 
 const acordarServidor = async () => {
   const cabecalhoHTTP = {
@@ -7,7 +7,7 @@ const acordarServidor = async () => {
       'Content-type': 'application/json'
     }
   }
-  const resposta = await fetch(`${url}/acordar`, cabecalhoHTTP)
+  const resposta = await fetch(`${URL_SERVIDOR}/acordar`, cabecalhoHTTP)
   if (resposta.ok) {
     return true
   }
