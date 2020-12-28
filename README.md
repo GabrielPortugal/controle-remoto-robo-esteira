@@ -19,7 +19,7 @@ npx react-native run-android
 ## ℹ️ Informações
 - O projeto está com nome de D6robo
 - Não requer levantar um servidor para testar o sistema
-- Caso queira testar com um servidor terá que fazer modificações do código
+- Caso queira testar com um servidor terá que fazer modificações no código
 
 - A tela inicial há o botão "ACORDAR" pelo motivo que o servidor fica hospedado na Heroku. Quando não está sendo utilizado ele entra no estado de "sleep" desta forma este botão acorda o servidor.
 
