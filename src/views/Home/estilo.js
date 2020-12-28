@@ -25,7 +25,7 @@ const estilo = StyleSheet.create({
     backgroundColor: AMARELO,
   },
   containerVideo: {
-    height: 200,
+    height: 170,
     width: (largura - 24),
     backgroundColor: CINZA_ESCURO,
     borderWidth: 4,

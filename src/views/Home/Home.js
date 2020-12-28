@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 import { View, Text, Image } from 'react-native'
 import { useNavigation } from '@react-navigation/native'
 
-import Controle from '../Controle/Controle'
-
 import { WebView } from 'react-native-webview';
+
+import Controle from '../Controle/Controle'
 
 import estilo from './estilo'
 import act from './actions'
@@ -12,13 +12,19 @@ import act from './actions'
 const Home = () => {
   const navigation = useNavigation()
 
+  const htmlVideo = `<div style="background-color: #333;display: flex;
+  justify-content: center;align-content: center;">
+  </div>`
+  // const htmlVideo = `<div style="background-color: #333;display: flex;
+  // justify-content: center;align-content: center;">
+  // <img src="http://10.0.0.140:8080/?action=stream" style="transform: rotate(180deg)"/>
+  // </div>`
+
   return (
     <View style={estilo.container}>
 
       <View style={estilo.containerVideo}>
-        <WebView
-          source={{ uri: 'https://infinite.red' }}
-        />
+        <WebView source={{ html: htmlVideo }} />
       </View>
 
       <View style={estilo.containerTexto}>
