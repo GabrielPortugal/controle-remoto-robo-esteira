@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { View, Text, Image } from 'react-native'
+import React, { useState, useEffect } from 'react'
+import { View, Text } from 'react-native'
 import { useNavigation } from '@react-navigation/native'
 
 import { WebView } from 'react-native-webview';
@@ -22,7 +22,6 @@ const Home = () => {
 
   return (
     <View style={estilo.container}>
-
       <View style={estilo.containerVideo}>
         <WebView source={{ html: htmlVideo }} />
       </View>
